@@ -99,13 +99,15 @@ START:
 
 void meetTheStranger(){
 START:
-    printf("meet a mysterious stranger. He is wearing a tan jacket and carrying a deerskin suitcase. This seems odd until you realize that he is a fly salesman.\n");
+    printf("meet a mysterious stranger. You do not recognize him. He is wearing a tan jacket and carrying a deerskin suitcase. This seems odd until he tells you that he is a fly salesman.\n");
     if (playerMetTheMan == 1) {
-        printf("He wishes you luck in your quest\n");
+        printf("He says hello as if he knows you, but you do not know him.\n");
+        return;
     }
     else
     {
-        printf("HEY DUDE YOURE GONNA DIE");
+        printf("The man tells you that great mysteries are afoot. He gives you a paper. There are words on it that you cannot read.\n");
+        return;
     }
 }
 
